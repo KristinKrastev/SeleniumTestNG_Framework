@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Excel Suit">
+	<listeners>
+		<listener class-name="utilityExtentReports.ExtentTestListener" />
+	</listeners>
+	<test name="Excel Test">
+		<parameter name="Browser" value="chrome"></parameter>
+		<classes>
+			<class name="tests.Sheet1"></class>
+		</classes>
+	</test>
+
+	<test name="Positive Test">
+		<parameter name="Browser" value="chrome"></parameter>
+		<classes>
+			<class name="tests.PositiveTest"></class>
+		</classes>
+	</test>
+
+</suite>

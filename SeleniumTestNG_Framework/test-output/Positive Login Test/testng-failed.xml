@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Positive Login Test]" guice-stage="DEVELOPMENT">
+  <parameter name="Browser" value="Chrome"/>
+  <listeners>
+    <listener class-name="utilityExtentReports.ExtentTestListener"/>
+  </listeners>
+  <test thread-count="5" name="Positive test(failed)">
+    <classes>
+      <class name="tests.PositiveTest">
+        <methods>
+          <include name="closeDriver"/>
+          <include name="logInTest"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- tests.PositiveTest -->
+    </classes>
+  </test> <!-- Positive test(failed) -->
+</suite> <!-- Failed suite [Positive Login Test] -->

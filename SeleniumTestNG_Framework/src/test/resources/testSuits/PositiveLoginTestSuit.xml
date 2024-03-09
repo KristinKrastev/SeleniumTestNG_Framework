@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Positive Login Test">
+	<parameter name="Browser" value="Chrome" />
+	<listeners>
+		<listener class-name="utilityExtentReports.ExtentTestListener" />
+	</listeners>
+	<test name="Positive test">
+		<classes>
+			<class name="tests.PositiveTest"></class>
+		</classes>
+	</test>
+</suite>
